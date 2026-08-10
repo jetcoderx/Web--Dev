@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Variables</title>
+    <style>
+        :root{
+            --color : rgba(244, 100, 100, 0.468);
+            --seccolor : rgba(50, 132, 246, 0.502);
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+
+        }
+        nav{
+            background-color: var(--color);
+
+        }
+        ul{
+            display: flex;
+            list-style: none;
+          
+        }
+        li{
+              margin: 5px;
+            padding: 10px;
+        }
+        .container{
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus atque omnis commodi officiis architecto quasi facere non, laborum nobis nostrum excepturi qui? Totam, voluptate reprehenderit. Iusto rem saepe corrupti inventore necessitatibus aspernatur et fuga quasi nesciunt in aperiam esse soluta error, hic exercitationem explicabo ducimus!
+    </div>
+</body>
+</html>
