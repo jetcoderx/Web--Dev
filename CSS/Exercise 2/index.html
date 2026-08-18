@@ -1,79 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise 2</title>
+    <title>CSS cards</title>
     <style>
-          @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-        *{
-            margin: 0px;
-            padding: 0px;
-           font-family:"Bebas Neue", sans-serif;
-        }
-        .container{
-            width: 30vw;
-            height: 70vh;
-            padding: 2px;
-            border: 2px solid black;
-            border-radius: 5px;
-            background-color: aliceblue;
-            position: relative;
-            left: 170px;            
-        }
-        img{
-            width: 29vw;
-            height: 40vh;
-            margin: 2px;
-            padding: 2px;
-            border-radius: 5px;
-            position: relative;
-            left: 0px;
-        }
-        .head{
-            border: 2px solid black;
-            border-radius: 40%;
-            display: inline-flex;
-            padding: 2px;
-            width: 40px;
-            justify-content: center;
-        }
-        p{
-            text-align: center;
-        }
-        h2{
-            padding: 10px;
-        }
-        .box{
-            background-color: rgba(46, 162, 251, 0.363);
-            color: rgb(65, 65, 241);
-            padding: 10px;
-            justify-content: center;
-        }
-        .bigbox{
-            justify-content: center;
+        body {
+            background-color: gray;
+            padding: 30px;
+
+
         }
 
+        .card {
+            background-color: white;
+            width: 200px;
+            height: 400px;
+            border-radius: 8px;
+            margin: 4px;
+        }
+
+        img {
+            padding: 5px;
+            border-radius: 8px;
+        }
+
+        .capsule {
+            padding: 2px 15px;
+        }
+
+        span {
+            border: 0.5px solid gray;
+            padding: 3px 10px;
+            border-radius: 10px;
+            font-size: 13px;
+            font-family: "Poppins", sans-serif;
+            font-weight: lighter;
+            background-color: rgba(250, 249, 249, 0.984);
+            color: gray;
+    
+        }
+
+        .content {
+            padding: 7px 13px;
+        }
+
+        .content h2 {
+            font-size: 20px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+        }
+
+        p {
+            font-size: 12px;
+            padding: 5px;
+            color: gray;
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+        }
+
+        .button {
+            text-align: center;
+
+        }
+
+        .button button {
+            border: none;
+            background-color: rgba(150, 209, 243, 0.479);
+            color: rgba(92, 92, 238, 0.849);
+            border-radius: 10px;
+            padding: 5px 20px;
+            font-size: 9px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .button button:hover {
+            background-color: rgb(194, 225, 246);
+            color: rgb(10, 136, 214);
+        }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <img src="Spiderman.png.jpg" alt="">
-    
-    <div> 
-            <span class="head">Nature</span>
-            <span class="head">Lake</span>
-        
+
+    <div class="card">
+        <div class="image">
+            <img width="190" height="150"
+                src=""
+                alt="Naav ki image">
+
+        </div>
+        <div class="capsule">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+
+
+        <div class="content">
+            <h2>Harsh Maurya</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui dolorum necessitatibus laborum? Odit sint
+                numquam dolorem amet quaerat expedita libero id, quasi ad?
+            </p>
+        </div>
+        <div class="button">
+            <button>Read more</button>
+        </div>
+
+
+
     </div>
-    <div><h2>Harsh Maurya</h2></div>
-    <div>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eaque doloremque blanditiis quaerat 
-        </p>
-    </div>
-    <div class="bigbox">
-        <span class="box">Read more</span>
-    </div>
-    
 </body>
+
 </html>
