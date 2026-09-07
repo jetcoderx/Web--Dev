@@ -1,58 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>website</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
-        nav{
+        header{
+            position: sticky;
+            top: 0;
+        }
+
+        nav {
             padding: 20px;
-            height: 100px;
+            height: 30px;
             background-color: rgb(93, 150, 236);
         }
-        main{
-            background-color: rgb(8, 138, 8);
+
+        main {
+            background-color: rgb(2, 2, 2);
+            text-align: center;
+            padding: 20px;
         }
-        ul li{
+
+
+        ul li {
             list-style: none;
             display: inline;
             padding: 20px;
 
         }
-        a{
+
+        a {
             text-decoration: none;
         }
-        .Box{
-            width: 100px;
+
+        .container1 {
+            height: 70vh;
+            width: 45vw;
+            background-color: pink;
+            display: inline-block;
+
+
+        }
+
+        .container2 {
+            height: 70vh;
+            width: 45vw;
+            background-color: aquamarine;
+            display: inline-block;
+
+        }
+        .box{
+             background-color:green;
+             padding:10px 30px;
+             
+        }
+        .box3 {
+            padding: 34px;
+            border: 2px solid white;
+            margin: 50px 34vw;
+            font-size: 2em;
+            border-radius: 13px;
+            color: white;
+
+        }
+        footer{
             height: 100px;
-            border: 2px solid black;
+            background-color: rgb(166, 0, 255);
+        }
+        .orange-box {
+            height: 32px;
+            width: 32px;
+            background: orange;
+            position: fixed;
+            bottom: 12px;
+            right: 23px;
+            border-radius: 60px;
         }
     </style>
 </head>
+
 <body>
     <header>
         <nav>
 
             <ul>
-                <a href="/"><li>Home</li></a>
-                <a href="/"><li>About us</li></a>
-                <a href="/"><li>Contact us</li></a>
+                <a href="/">
+                    <li>Home</li>
+                </a>
+                <a href="/">
+                    <li>About us</li>
+                </a>
+                <a href="/">
+                    <li>Contact us</li>
+                </a>
             </ul>
-            
+
         </nav>
     </header>
     <main>
-        <span class="Box container2">Box 1</span>
-        <span class="Box container1">Box 2</span>
-        <div class="container3">Welcome to the sigma web devlopment express</div>
+        <div class="box">
+            <div class=" container1">Box 1></div>
+            <div class=" container2">Box 2></div>
+        </div>
+        <div class="box3">Welocme to sigma web devlopment express</div>
+        <div class="orange-box"></div>
     </main>
+
+
     <footer>
         copyright claims
     </footer>
-    
+
 </body>
+
 </html>
