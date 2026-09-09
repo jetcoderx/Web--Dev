@@ -1,0 +1,121 @@
+   .logo img {
+
+       width: 160px;
+       height: 60px;
+   }
+
+   nav {
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+   }
+
+   .right ul {
+       display: flex;
+       gap: 25px;
+   }
+
+   .right ul li {
+       list-style: none;
+       display: flex;
+       align-items: center;
+   }
+
+   .first {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       gap: 30px;
+       margin: 50px;
+       font-family: sans-serif;
+
+   }
+
+   .first span {
+       font-size: 38px;
+   }
+
+   .first div {
+       width: 48vw;
+       font-size: 19px;
+       text-align: center;
+
+   }
+
+   .first button {
+       background-color: rgb(14, 207, 246);
+       margin: 10px;
+       padding: 5px 11px;
+       height: 6vh;
+       border: none;
+       border-radius: 6px;
+       color: rgba(255, 255, 255, 0.879);
+       font-weight: bold;
+   }
+
+
+   .download {
+       display: flex;
+       gap: 5px;
+       font-family: serif;
+       align-items: center;
+       justify-content: center;
+       margin: 10px;
+   }
+   
+
+   .small {
+       font-size: 12px;
+   }
+
+   .item {
+       padding: 23px;
+       background: #f9f9f9;
+       border-radius: 12px;
+       font-size: 20px;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       text-align: center;
+   }
+   .second{
+    max-width: 75vw;
+    margin: auto;
+   }
+
+   .item-lang {
+       padding-bottom: 12px;
+   }
+
+   .green {
+       background-color: #5cb85c;
+   }
+   .blu
+   {
+    background-color: #00b6d1;
+   }
+
+   .btn {
+       
+       padding: 14px 16px;
+       color: white;
+       border: none;
+       border-radius: 6px;
+       font-weight: 700;
+       margin: 12px 0;
+       cursor: pointer;
+   }
+
+   .grid {
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       gap: 12px;
+   }
+   @media screen and (max-width:1000px){
+
+    .grid {
+       display: grid;
+       grid-template-columns: 1fr;
+    }
+       
+   
+   }
