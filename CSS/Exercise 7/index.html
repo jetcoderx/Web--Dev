@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 70vw;
+            height:80vh;
+            position: relative;
+            background-color: greenyellow;
+        }
+        .box{
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: y-dirn 1s ease-out 1ms infinite alternate,
+                      x-dirn 4s linear 1ms infinite ;
+            
+        }
+        @keyframes x-dirn {
+            from{
+                left: 0%;
+            }
+            to{
+                left: 100%;
+            }
+            
+        }
+        @keyframes y-dirn {
+            0%{
+                bottom: 0%;
+            }
+            100%{
+                bottom: 100%;
+            
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+</body>
+</html>

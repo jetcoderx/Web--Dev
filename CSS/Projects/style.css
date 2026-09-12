@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/fd8ae3c6-340b-490b-9d3c-f8a3df895c45/web/IN-en-20260907-TRIFECTA-perspective_e8f74db6-0559-495d-84fb-a75bca089b27_large.jpg);
+    height: 544px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 60vw;
+    margin: auto;
+    height: 50px;
+}
+.main .box{
+    height: 544px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: black;
+    opacity: 0.60;
+  
+}
+nav  span img {
+    width: 130px;
+    position: relative;
+    z-index: 10;
+   
+}
+nav span{
+     padding-top: 20px;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+}
+.hero{
+    font-family: "Martel Sans", sans-serif;
+    color: aliceblue;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+
+}
+.hero> :first-child{
+    font-weight: bolder;
+    font-size: 50px;
+}
+.hero> :nth-child(2){
+    font-weight: bolder;
+    font-size: 50px;
+}
+.hero> :nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+}
+.hero> :nth-child(4){
+    font-weight: 400;
+    font-size: 20px;
+}
+.hero button{
+    background-color: rgb(229,9,20);
+    border: none;
+    padding: 5px 5px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    width: 110px;
+    height: 35px;
+
+}
